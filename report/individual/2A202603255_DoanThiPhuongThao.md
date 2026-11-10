@@ -69,6 +69,10 @@ Trả lời bốn câu hỏi cuối notebook:
 ## 7. Tự đánh giá theo rubric
 
 Đối chiếu [RUBRIC.md](../../RUBRIC.md): phần nào đã có kết quả, phần nào còn thiếu hoặc chưa kiểm được. Không tự nhận hoàn thành bước chưa chạy.
+[x] Đã hoàn thành gán nhãn tập train và self-QC.
+[x] Đã xuất và lưu file đánh giá Gold QC (annotation_evaluation.json).
+[x] Đã huấn luyện YOLO, thu được weight best.pt và các chỉ số eval.
+[x] Đã hoàn thành trả lời đầy đủ 4 câu hỏi lý thuyết của notebook.
 
 ## 8. Công cụ AI và tài liệu tham khảo
 
