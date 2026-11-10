@@ -52,9 +52,11 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 | mAP50–95 |0.203 |
 
 Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
+Dự đoán eval: "report\individual\assets\eval_predictions"
+Luồng chạy YOLO: "report\individual\assets\yolo26_runs"
+Trong tập 10 ảnh eval, mô hình hoạt động tốt nhất ở lớp car (Precision 0.836, mAP50 0.741), nhưng nhận diện rất kém ở các lớp thiếu mẫu như bus và van. Nhìn vào ảnh dự đoán report\individual\assets\eval_predictions\visuals\drive_051.jpg, các xe ô tô con cận cảnh được khoanh box chính xác, trong khi các xe van bị bỏ sót (FN) hoặc đoán nhầm thành car.
 
 Trả lời bốn câu hỏi cuối notebook:
-
 1. Lớp nào có recall thấp nhất? Chỉ ra một ảnh eval minh họa. Lớp bus có Recall thấp nhất, bằng 0%. Ảnh drive_058.
 2. Nếu mAP50 cao nhưng mAP50-95 thấp, box đang gặp vấn đề gì? ounding box có thể chưa ôm sát đối tượng, bị lệch vị trí hoặc chưa chính xác về chiều rộng và chiều cao.
 3. Có lỗi truck/bus/van/car nào liên quan tới guideline không? Nhầm xe van với xe con chỉ vì kích thước hoặc góc nhìn.
